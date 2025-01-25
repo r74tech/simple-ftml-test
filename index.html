@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FTML Renderer Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-8">
+    <div class="max-w-3xl mx-auto space-y-4">
+      <h1 class="text-2xl font-bold mb-4">FTML Renderer Demo</h1>
+      <textarea
+        id="ftml-input"
+        placeholder="Wikidot構文を入力してください"
+        class="w-full h-[150px] p-2 text-base font-mono border border-gray-300 rounded-md"
+      ></textarea>
+      <div
+        id="ftml-preview"
+        class="w-full min-h-[100px] p-2 bg-gray-50 border border-gray-300 rounded-md"
+      >
+      <ftml-renderer></ftml-renderer>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
